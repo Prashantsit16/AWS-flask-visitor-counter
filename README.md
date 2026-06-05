@@ -17,5 +17,9 @@ A full-stack cloud application that records visitor IPs and displays a live coun
 - Auto-restarts on crash
 - Professional frontend with gradient design
 
+## Look
+<img width="1908" height="921" alt="image" src="https://github.com/user-attachments/assets/5c9a18a0-938a-43d7-89ff-a8181efed3ab" />
+
+
 ## Author
 Prashant - Aspiring Cloud Engineer
