@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant's Cloud Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #00d4ff, #ff00d4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .counter {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            color: #00d4ff;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(0,212,255,0.2);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin: 1rem 0;
+        }
+        .details {
+            text-align: left;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+        .details li {
+            margin: 0.5rem 0;
+            list-style: none;
+        }
+        footer {
+            margin-top: 1.5rem;
+            font-size: 0.7rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="badge">🚀 LIVE ON AWS EC2 + RDS</div>
+        <h1>Prashant's Cloud Portfolio</h1>
+        <p>This page is served from my own cloud infrastructure</p>
+        <div class="counter">{{ visit_count }}</div>
+        <p>Total visits to this site</p>
+        <div class="details">
+            <li>🔹 Web Server: Amazon Linux 2023 + Nginx + Flask</li>
+            <li>🔹 Database: AWS RDS PostgreSQL</li>
+            <li>🔹 Infrastructure: EC2 with systemd auto-start</li>
+            <li>🔹 Your IP: {{ visitor_ip }}</li>
+        </div>
+        <footer>Deployed manually via SSH | Day 6 — Flask + HTML Templates</footer>
+    </div>
+</body>
+</html>
+
